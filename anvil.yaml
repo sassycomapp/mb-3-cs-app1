@@ -1941,12 +1941,12 @@ dependencies:
 - dep_id: dep_8th6xb0cwxbws
   resolution_hints: {app_id: 3PIDO5P3H4VPEMPL, name: routing, package_name: routing}
   version: {version_tag: v0.6.1}
-name: mb-3-cs
+name: mb-3-cs-app1
 native_deps:
   head_html: |+
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1/dist/floating-ui.dom.umd.min.js"></script>
 
-package_name: mb_3_cs
+package_name: mb_3_cs_app1
 renamed: true
 runtime_options:
   client_version: '3'
