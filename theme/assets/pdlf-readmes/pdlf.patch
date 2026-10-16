@@ -1,0 +1,186 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 52e9bd1..30f33b9 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -16,7 +16,7 @@ The global `AGENTS.md` (`~/.config/opencode/AGENTS.md`) governs everything this
+ | Folder | What it holds |
+ |---|---|
+ | `app-factory/` | The build, one folder per phase (`phase-a-init` to `phase-f-ship-and-monitor`). Each holds its numbered step files (`11-init.md`, `11-build-notes.md` and so on) and one module file per step (`11-module.md`), plus `pdlf-build-plan.md` at the top. See `app-factory/README.md`. |
+-| `pdlf-library/` | The shared machinery: ADRs, specifications, policies, processes, templates, explainers. See `pdlf-library/README.md`. |
++| `pdlf-library/` | The shared machinery: ADRs, specifications, policies, templates, explainers and working documents. See `pdlf-library/README.md`. |
+ | `output/` | Temporary artifact copies for the project currently in the pipeline, by producing tool: `output-gstack/`, `output-opencode/`, `output-pocock/`. Not version-controlled. |
+ | `desktop/` | The developer's working documents. |
+ | `obsolete/` | Retired files. |
+diff --git a/README.md b/README.md
+index e11dbe5..804ca05 100644
+--- a/README.md
++++ b/README.md
+@@ -22,7 +22,7 @@ PDLF draws its knowledge and standards, Anvil knowledge included, from `project-
+ | Folder | What it holds |
+ |---|---|
+ | `app-factory/` | The build, one folder per phase (`phase-a-init` to `phase-f-ship-and-monitor`). Each phase folder holds its numbered step files and one module file per step: `11-init.md` is the step, `11-module.md` is the step compiled into a single unit; until then the module file is a placeholder. `pdlf-build-plan.md` sits at the top. See `app-factory/README.md`. |
+-| `pdlf-library/` | The shared machinery every module relies on: ADRs, specifications, policies, processes, templates, explainers and supporting documents. See `pdlf-library/README.md`. |
++| `pdlf-library/` | The shared machinery every module relies on: ADRs, specifications, policies, templates, explainers and supporting documents. See `pdlf-library/README.md`. |
+ | `output/` | Temporary copies of the artifacts produced while one project runs through PDLF, kept by producing tool in `output-gstack/`, `output-opencode/` and `output-pocock/`. Each artifact is copied into the project's own folders, then cleared from here. Not version-controlled. |
+ | `desktop/` | The developer's working documents for the current work. |
+ | `obsolete/` | Retired files. |
+diff --git a/app-factory/README.md b/app-factory/README.md
+index aff93f7..3fa4cf9 100644
+--- a/app-factory/README.md
++++ b/app-factory/README.md
+@@ -1,29 +1,32 @@
+ ---
+ title: "README"
+ doc-id: "mb-ab3dbf19"
+-updated: "2026-10-01"
++updated: "2026-10-11"
+ ---
+-# App Factory — PDLF Machinery
++# App Factory
+ 
+-The executable machinery of the PDLF system: forty-six modules, one per
+-pipeline step, `module-1.md` through `module-46.md`. Each module holds the
+-output the makePDLF development project produces for its corresponding step —
+-a skill, or a module that defines and runs that step.
++The app factory holds PDLF's build: every step of the pipeline, in the phase it belongs to. When PDLF builds an application, the modules in these folders are what run. What the app factory is and why it is built this way is in [[[pdlf:pdlf-library/pdlf-explainer-docs/app-factory-explainer|PDLF — The App Factory]]](C:/pdlf/pdlf-library/pdlf-explainer-docs/app-factory-explainer.md).
+ 
+-- **Built in makePDLF, migrated once.** Modules are populated as makePDLF
+-  completes each step, and migrate into this folder only when all 46 are
+-  complete. Until then, the live machinery lives in the makePDLF environment.
+-- **Modules implement the conventions** in `C:\pdlf\pdlf-library\` — above
+-  all `C:\pdlf\pdlf-library\pdlf-specifications\pdlf-spec-artifact-handover.md` and
+-  `C:\pdlf\pdlf-library\pdlf-adr\pdlf-adr-artifact-saving-convention.md`.
+-- **Module 1** is the orchestrator machinery — the standing agent that runs
+-  every other module (see `pdlf-library/pdlf-explainer-docs/pdlf-expl-orchestrator-agent.md`).
+-- Steps 13 and 25 are reserved gaps: those steps were disbanded; their numbers
+-  are kept empty by design.
+-- Current state: all module files are placeholders (created 2026-09-11),
+-  populated step by step as makePDLF completes them. What it is and why it is
+-  built this way: `pdlf-library/pdlf-explainer-docs/pdlf-expl-app-factory.md`.
++## Phase folders
+ 
+----
++| Folder | Steps | What the phase does |
++|---|---|---|
++| `phase-a-init/` | 01–10 | 01 is the orchestrator, which runs every other module. 02–10 are the entry points for work on existing applications. |
++| `phase-b-discover-and-define/` | 11–16 | Defines the application. Also holds `pdlf-phase-b-review.md`. |
++| `phase-c-design-and-plan/` | 17–28 | Designs and plans the application. |
++| `phase-d-scaffold-and-assemble/` | 29–34 | Builds the application's scaffold. |
++| `phase-e-build-and-verify/` | 35–40b | Builds the application and verifies it. |
++| `phase-f-ship-and-monitor/` | 41–46 | Releases the application and learns from the run. |
++| `phase-g/` | — | The remaining applications. Created when it is designed. |
++
++## How files are named
++
++- Every file starts with its step number: `16-domain-modeling.md`, `16-build-notes.md`, `16-decision-tree.html`.
++- Each step has one module file beside its step files, `NN-module.md`. The module is the step compiled into a single unit. It stays a placeholder until David instructs the compile (rule 2 of `C:\pdlf\AGENTS.md`).
++- Step numbers are global, 01 to 46. The number is the step's identity in the ledger, the gates, the receipts and every document, so steps are never renumbered within a phase.
++- Inserted steps carry a lowercase letter: 35a, 38a, 40b, 42a.
++- Numbers 13 and 25 are not used as steps. Their module files are kept.
++
++## The build plan
+ 
+-*End of README — App Factory*
+\ No newline at end of file
++`pdlf-build-plan.md` sits at the top of this folder. It is the blueprint for building PDLF. What has been built is recorded in `pdlf-library/docs-local/pdlf-built-report.md`, and the order the orchestrator runs the steps is in `pdlf-library/docs-local/orchestrator-run-plan.md`. When PDLF is built, the build plan moves to `obsolete/`.
+diff --git a/pdlf-library/README.md b/pdlf-library/README.md
+index 91daf43..2f49da2 100644
+--- a/pdlf-library/README.md
++++ b/pdlf-library/README.md
+@@ -1,77 +1,33 @@
+ ---
+ title: "README"
+ doc-id: "mb-5220bac9"
+-updated: "2026-10-10"
++updated: "2026-10-11"
+ ---
+ # PDLF Library
+ 
+-The canonical technical documentation home of the PDLF system — the running
+-Project Development Lifecycle Framework — living in the PDLF environment
+-(`C:\pdlf`). The makePDLF development project (`C:\dev\dev-makepdlf\`)
+-builds the system; this library documents it. Decisions, specifications, and
+-explainers that are canonical to the PDLF system live here once they are
+-settled.
++The PDLF library holds the shared machinery every module in `app-factory/` relies on: the decisions, specifications, policies, templates, explainers and working documents of the PDLF system. Knowledge and standards that are not specific to PDLF, Anvil knowledge included, live in `project-library-global`, not here.
+ 
+-## Folder map
++## The intent comes first
+ 
+-| Folder | Holds | The one-line test |
+-|---|---|---|
+-| `pdlf-adr/` | Architecture decision records | A decision that was made, with its reasoning |
+-| `pdlf-specifications/` | Technical specifications | The binding truth: exact paths, exact rules, checkable requirements |
+-| `pdlf-policy/` | Policies | Rules agents must obey — enforced, not explained |
+-| `pdlf-processes/` | Procedures | A procedure someone follows, in order |
+-| `pdlf-explainer-docs/` | Explainers | What something is, what role it plays, why it is this way — binds nobody |
+-| `pdlf-explainer-docs/pdlf-stepwise/` | Per-step explainers | One folder per step (1–46), filled as each step is finalized |
+-
+-Explainers make you understand; specifications make the machine behave;
+-policies forbid; ADRs record why; processes walk through doing.
+-
+-## Naming rules
+-
+-- Every filename carries the library and type prefix: `pdlf-adr-`,
+-  `pdlf-spec-`, `pdlf-pol-`, `pdlf-proc-`, `pdlf-expl-`. A document's
+-  identity (its filename) is therefore unique across the whole corpus by
+-  construction.
+-- Files are named descriptively, without sequence numbers. Two standing
+-  exceptions are inherently ordinal: the stepwise material and the
+-  app-factory modules.
+-- Full naming rules, including the project-slug rules that keep every
+-  artifact name unambiguous: `pdlf-specifications/pdlf-spec-nomenclature.md`.
+-
+-## What is here now, and what is deferred
++[[[pdlf:pdlf-library/pdlf-explainer-docs/pdlf-intent|PDLF Intent]]](C:/pdlf/pdlf-library/pdlf-explainer-docs/pdlf-intent.md) is the single statement of what PDLF is meant to be. Where any document disagrees with it, the intent wins and the other document is corrected.
+ 
+-Present: the artifact-saving convention ADR, the artifact-and-handover
+-specification, the nomenclature specification, three explainers (orchestrator
+-agent, artifact lifecycle, app-factory), the objective review. The
+-environment explainer and system explainer were returned to
+-`C:\mybizz\mybizz-os-docs\` on 2026-09-19 per developer instruction; the
+-objective review was moved here from `C:\mybizz\mybizz-os-docs\` on
+-2026-09-11 (moved, not copied — sole homes, no duplicates).
++## Folders
+ 
+-Deliberately deferred to the makePDLF environment until makePDLF completes:
+-the per-step explainers (`pdlf-stepwise/` — folders exist, empty), the
+-stepwise gating policy, and the stepwise closeout process. These describe
+-machinery still being built and reworked; they will migrate here with the
+-app-factory modules when the system is complete.
++| Folder | What it holds | The test for putting a document here |
++|---|---|---|
++| `pdlf-explainer-docs/` | Explainers, including `pdlf-intent.md` | It says what something is and why. It binds nobody. |
++| `adr-local/` | Architecture decision records | It records a decision that was made, with its reasoning. |
++| `specifications-local/` | Specifications (`spec-` prefix) | It states exact paths, rules and requirements the machinery must meet. |
++| `policy-local/` | Policies (`pol-` prefix), listed in `pol-INDEX.md` | It is a rule the agent must obey. |
++| `templates-local/` | Templates | It is a blank form a step fills in, such as a step receipt. |
++| `docs-local/` | Working documents of the system | It tracks the system's state: configuration, build progress, run order, to-do list, judgement trail, reference material. |
+ 
+-## Relationship to its neighbours
++## The documents that steer the build
+ 
+-- **The makePDLF development project** builds the system and holds its own
+-  in-development step files, policies, and procedures. This library holds
+-  what is settled and canonical to the finished system.
+-- **[[[pdlf:pdlf-library/pdlf-explainer-docs/pdlf-explainer]]](C:/pdlf/pdlf-library/pdlf-explainer-docs/pdlf-explainer.md)** (now `pdlf-explainer.md` in `C:\mybizz\mybizz-os-docs\`,
+-  returned 2026-09-19) is the full
+-  general explainer of PDLF, moved here from `C:\mybizz\mybizz-os-docs\` on
+-  2026-09-11 — this is its sole home; no duplicate exists elsewhere.
+-- **[[[pdlf:obsolete/pdlf-objective-review]]](C:/pdlf/obsolete/pdlf-objective-review.md)** assesses PDLF against the comparable
+-  frameworks in the field.
+-- **The app-factory** (`C:\pdlf\app-factory\`) is the machinery this library
+-  documents; its modules implement the conventions specified here.
++- `app-factory/pdlf-build-plan.md`: the blueprint for building PDLF.
++- `docs-local/pdlf-built-report.md`: what has been built.
++- `docs-local/orchestrator-run-plan.md`: the order the orchestrator runs the steps.
+ 
+ ## Finding documents
+ 
+-Documents are found by GBrain search.
+-
+----
+-
+-*End of README — PDLF Library*
+\ No newline at end of file
++Documents are found by GBrain search (source `pdlf`).
