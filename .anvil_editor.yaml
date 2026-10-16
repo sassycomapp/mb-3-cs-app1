@@ -1,9 +1,7 @@
 unique_ids:
   assets:
     docs/.gitkeep: '1790939234445723461222628.4583'
-    docs/test-1/test-1.txt: VMRVBLJBREICEP4HXVLEHKQBEXQXGLM4
-    docs/test-2/test-2.txt: '1792148437595304755817832.65247'
-    docs/test-3/test-3.txt: 5GZCHZG3G4I2WLNBABRCIFZ3XUTKVY3Z
+    docs/app1/pilot-doc.txt: '1792154648024616182436013.047'
     standard-page.html: MNYKQW2JKTNAI6MXYV3DDCA5NESGZTWP
     theme.css: JFOIZMJMLB2WWTWONTM6T3Y2WQT3OVF7
   forms:
