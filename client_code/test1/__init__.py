@@ -1,5 +1,7 @@
 from ._anvil_designer import test1Template
 from anvil import *
+import anvil.google.auth, anvil.google.drive
+from anvil.google.drive import app_files
 import anvil.server
 from routing import router
 import m3.components as m3
