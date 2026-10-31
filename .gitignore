@@ -5,7 +5,12 @@ __pycache__
 .opencode/
 agents.md
 opencode.json
-pytest.ini
-tests/
 /.anvil/
 graphify-out/
+.env
+.env.*
+credentials*
+.pytest_cache/
+.venv/
+.gbrain/
+.gstack/

@@ -1,5 +1,5 @@
 import anvil.users
-lkanding_pagesimport anvil.server
+import anvil.server
 from routing import router
 import anvil.tables as tables
 import anvil.tables.query as q

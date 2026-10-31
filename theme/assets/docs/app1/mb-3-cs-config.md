@@ -1,6 +1,6 @@
 # mb-3-cs — config
 
-State of the mb-3-cs project and its App 1 repository, as verified 2026-10-30.
+State of the mb-3-cs project and its App 1 repository, as verified 2026-10-31.
 
 ## Identity
 
@@ -21,7 +21,7 @@ repository on the machine: `C:\mybizz\mybizz-os-docs\os-reference-docs\repo-orga
 
 | Repository | Role |
 |---|---|
-| `mb-3-cs-project-library` | Documentation, ADRs, wireframes, design artefacts; the planning authority. Folder exists; not yet a Git repository |
+| `mb-3-cs-project-library` | Documentation, ADRs, wireframes, design artefacts; the planning authority. Git repository on GitHub (`sassycomapp/mb-3-cs-project-library`); GBrain source registered, federated (51 pages); on the commit tools with the hook installed |
 | `mb-3-cs-app1` | App 1, the development workspace — this repository |
 | `mb-3-cs-app2` | App 2, `master_template`; receives App 1's tagged releases |
 | `mb-3-cs-app3` | App 3, `blank_client_template`; cloned for each new client |
@@ -60,11 +60,11 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 |---|---|
 | Entry | 03 `new-app-with-context`, taken 2026-10-30 |
 | Run | `app1`, route Application |
-| Next step | 11 (Phase B) |
+| Last step | 11 complete 2026-10-31 (receipt, checks, health check and PR-09 evidence in `mb-3-cs-project-library\pdlf-outputs\b11\`) |
+| Next step | 12 (Phase B) |
 | Pause | After Step 16 gate `domain-locked`: Phases C to F are not built |
 | Ledger | Database `pdlf`, port 5433, through the PowerShell bridge of PDLF's `spec-postgres-ledger` |
 
 ## Open items
 
-- `mb-3-cs-project-library` is not yet a Git repository; PDLF Step 11 creates it.
 - `product-requirements-document.md` in the project context is frontmatter-only (empty body).
