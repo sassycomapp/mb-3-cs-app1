@@ -1951,7 +1951,7 @@ renamed: true
 runtime_options:
   client_version: '3'
   legacy_features: {bootstrap3: true, class_names: true}
-  server_spec: {}
+  server_spec: {base: python314}
   server_spec_disabled: {base: python310-minimal}
   server_version: python3-full
   version: 3
