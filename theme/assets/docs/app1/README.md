@@ -1,10 +1,10 @@
 # mb-3-cs — Mybizz Consulting Services
 
-The development workspace (App 1) of Mybizz Consulting Services, a multi-vertical
-consulting platform built on Anvil.works: CRM, bookings, services, invoicing,
-email campaigns, blog, landing pages, tasks and time tracking. App 1 is where the
-application is built; its tagged releases become the master template, from which
-client instances are cloned.
+The development workspace (App 1) of Mybizz Consulting Services — a complete
+online business platform for consulting and service businesses, delivered as
+subscription SaaS: each client runs their own isolated instance cloned from the
+blank template. App 1 is where the application is built; its tagged releases
+become the master template, from which every client instance inherits.
 
 ## Required reading
 

@@ -1,6 +1,6 @@
 # mb-3-cs — config
 
-State of the mb-3-cs project and its App 1 repository, as verified 2026-10-31.
+State of the mb-3-cs project and its App 1 repository, as verified 2026-11-03.
 
 ## Identity
 
@@ -60,11 +60,11 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 |---|---|
 | Entry | 03 `new-app-with-context`, taken 2026-10-30 |
 | Run | `app1`, route Application |
-| Last step | 11 complete 2026-10-31 (receipt, checks, health check and PR-09 evidence in `mb-3-cs-project-library\pdlf-outputs\b11\`) |
-| Next step | 12 (Phase B) |
+| Last step | 12 complete 2026-11-03 (receipt, checks, design doc and /office-hours evidence in `mb-3-cs-project-library\pdlf-outputs\b12\`) |
+| Next step | 14 (Phase B) |
 | Pause | After Step 16 gate `domain-locked`: Phases C to F are not built |
 | Ledger | Database `pdlf`, port 5433, through the PowerShell bridge of PDLF's `spec-postgres-ledger` |
 
 ## Open items
 
-- `product-requirements-document.md` in the project context is frontmatter-only (empty body).
+- App 1 holds 44 of the 68 tables of `authoritative-schema.md`; the migration (`schema-migration-log.md`, Part A and prompts P1–P13) is applied by David through Resolve.
