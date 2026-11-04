@@ -1,6 +1,6 @@
 # mb-3-cs — config
 
-State of the mb-3-cs project and its App 1 repository, as verified 2026-11-03.
+State of the mb-3-cs project and its App 1 repository, as verified 2026-11-04.
 
 ## Identity
 
@@ -21,7 +21,7 @@ repository on the machine: `C:\mybizz\mybizz-os-docs\os-reference-docs\repo-orga
 
 | Repository | Role |
 |---|---|
-| `mb-3-cs-project-library` | Documentation, ADRs, wireframes, design artefacts; the planning authority. Git repository on GitHub (`sassycomapp/mb-3-cs-project-library`); GBrain source registered, federated (51 pages); on the commit tools with the hook installed |
+| `mb-3-cs-project-library` | Documentation, ADRs, wireframes, design artefacts; the planning authority. Git repository on GitHub (`sassycomapp/mb-3-cs-project-library`); GBrain source registered, federated; on the commit tools with the hook installed |
 | `mb-3-cs-app1` | App 1, the development workspace — this repository |
 | `mb-3-cs-app2` | App 2, `master_template`; receives App 1's tagged releases |
 | `mb-3-cs-app3` | App 3, `blank_client_template`; cloned for each new client |
@@ -51,6 +51,7 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 | Document | Where |
 |---|---|
 | Project config, reference, explainer, README | `theme/assets/docs/app1/` (this suite) |
+| Design doc (run app1) | `mb-3-cs-project-library\docs-local\design\app1\design-doc.md` — the reviewed plan; sections 16–22 added at Step 14 |
 | `pilot-doc.txt` | `theme/assets/docs/app1/pilot-doc.txt` — keeps the folder alive in Anvil; never delete |
 | Project context | `mb-3-cs-project-context` (sibling folder) — GBrain source `mb-3-cs-project-context`, federated |
 
@@ -60,11 +61,13 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 |---|---|
 | Entry | 03 `new-app-with-context`, taken 2026-10-30 |
 | Run | `app1`, route Application |
-| Last step | 12 complete 2026-11-03 (receipt, checks, design doc and /office-hours evidence in `mb-3-cs-project-library\pdlf-outputs\b12\`) |
-| Next step | 14 (Phase B) |
+| Last step | 14 complete 2026-11-04 (receipt, checks, gitleaks, reviewed-plan copy in `mb-3-cs-project-library\pdlf-outputs\b14\`; the design doc amended in place with sections 16–22 and the review report last) |
+| Next step | 15 (Phase B) |
 | Pause | After Step 16 gate `domain-locked`: Phases C to F are not built |
 | Ledger | Database `pdlf`, port 5433, through the PowerShell bridge of PDLF's `spec-postgres-ledger` |
 
 ## Open items
 
-- App 1 holds 44 of the 68 tables of `authoritative-schema.md`; the migration (`schema-migration-log.md`, Part A and prompts P1–P13) is applied by David through Resolve.
+- App 1 holds 44 tables; the schema to reach is 70 as amended by decision D8 (Step 14) — 68 in `authoritative-schema.md` today plus `cookie_policy` and `consents`, whose migration prompt is written after Step 14; the migration (Part A, prompts P1–P13, then the D8 prompt) is applied by David through Resolve.
+- After Step 14, Claude carries D8/D4/D5/D6 into the project's documents and writes the legal-documents global policy and specification; the full list is in `pdlf-outputs/b14/mb-3-cs-b14-app1-receipt.md` (Notes for next session).
+- AC-6 (Anvil's written confirmation of the account structure) and AC-14 (SES production access) are outstanding; both before the first paying client.
