@@ -1,5 +1,6 @@
 from ._anvil_designer import test1Template
 from anvil import *
+import m3.components as m3
 import anvil.server
 from routing import router
 import anvil.users
