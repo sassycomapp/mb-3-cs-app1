@@ -1938,6 +1938,9 @@ dependencies:
 - dep_id: dep_8th6xb0cwxbws
   resolution_hints: {app_id: 3PIDO5P3H4VPEMPL, name: routing, package_name: routing}
   version: {version_tag: v0.6.1}
+- dep_id: dep_lewosckouc52sm
+  resolution_hints: {app_id: 7USO6DVZSIIWA5QX, name: m3-custom-theme, package_name: m3}
+  version: {branch: master}
 name: mb-3-cs-app1
 native_deps:
   head_html: |+
