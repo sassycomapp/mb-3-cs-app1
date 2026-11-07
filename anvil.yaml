@@ -1966,5 +1966,5 @@ services:
 - client_config: {}
   server_config: {custom_smtp: false}
   source: /runtime/services/anvil/email.yml
-startup: {module: Form1, type: form}
+startup: {module: dashboard.ActivityFeed, type: form}
 startup_form: null
