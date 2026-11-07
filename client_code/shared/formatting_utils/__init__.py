@@ -3,7 +3,6 @@ from anvil import *
 import anvil.users
 import anvil.server
 from routing import router
-import m3.components as m3
 
 
 class formatting_utils(formatting_utilsTemplate):

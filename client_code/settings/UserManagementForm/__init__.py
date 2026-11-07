@@ -6,7 +6,6 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 from routing import router
-import m3.components as m3
 
 
 class UserManagementForm(UserManagementFormTemplate):
