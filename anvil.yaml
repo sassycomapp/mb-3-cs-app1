@@ -1950,7 +1950,7 @@ package_name: mb_3_cs_app1
 renamed: true
 runtime_options:
   client_version: '3'
-  legacy_features: {bootstrap3: true, class_names: true}
+  legacy_features: {bootstrap3: false, class_names: false}
   server_spec: {base: python314}
   server_spec_disabled: {base: python310-minimal}
   server_version: python3-full
