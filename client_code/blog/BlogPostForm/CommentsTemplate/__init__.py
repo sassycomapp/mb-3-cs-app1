@@ -3,7 +3,6 @@ from anvil import *
 import anvil.users
 import anvil.server
 from routing import router
-import m3.components as m3
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
