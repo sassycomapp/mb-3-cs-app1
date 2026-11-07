@@ -1,6 +1,6 @@
 # mb-3-cs — config
 
-State of the mb-3-cs project and its App 1 repository, as verified 2026-11-04.
+State of the mb-3-cs project and its App 1 repository, as verified 2026-11-07.
 
 ## Identity
 
@@ -51,7 +51,7 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 | Document | Where |
 |---|---|
 | Project config, reference, explainer, README | `theme/assets/docs/app1/` (this suite) |
-| Design doc (run app1) | `mb-3-cs-project-library\docs-local\design\app1\design-doc.md` — the reviewed plan; sections 16–22 added at Step 14 |
+| Design doc (run app1) | `mb-3-cs-project-library\docs-local\design\app1\design-doc.md` — the reviewed plan; sections 16–24, the Step 15 review body and the GSTACK REVIEW REPORT last |
 | `pilot-doc.txt` | `theme/assets/docs/app1/pilot-doc.txt` — keeps the folder alive in Anvil; never delete |
 | Project context | `mb-3-cs-project-context` (sibling folder) — GBrain source `mb-3-cs-project-context`, federated |
 
@@ -61,13 +61,13 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 |---|---|
 | Entry | 03 `new-app-with-context`, taken 2026-10-30 |
 | Run | `app1`, route Application |
-| Last step | 14 complete 2026-11-04 (receipt, checks, gitleaks, reviewed-plan copy in `mb-3-cs-project-library\pdlf-outputs\b14\`; the design doc amended in place with sections 16–22 and the review report last) |
-| Next step | 15 (Phase B) |
+| Last step | 15 complete 2026-11-07 (receipt, checks, gitleaks, threat model, access matrix, test plan, diagrams and copies in `mb-3-cs-project-library\pdlf-outputs\b15\`; the design doc amended in place with §23 Architecture, §24 Security Decisions, the review body and the report last) |
+| Next step | 16 (Phase B) |
 | Pause | After Step 16 gate `domain-locked`: Phases C to F are not built |
 | Ledger | Database `pdlf`, port 5433, through the PowerShell bridge of PDLF's `spec-postgres-ledger` |
 
 ## Open items
 
-- App 1 holds 44 tables; the schema to reach is 70 as amended by decision D8 (Step 14) — 68 in `authoritative-schema.md` today plus `cookie_policy` and `consents`, whose migration prompt is written after Step 14; the migration (Part A, prompts P1–P13, then the D8 prompt) is applied by David through Resolve.
-- After Step 14, Claude carries D8/D4/D5/D6 into the project's documents and writes the legal-documents global policy and specification; the full list is in `pdlf-outputs/b14/mb-3-cs-b14-app1-receipt.md` (Notes for next session).
+- App 1 holds 44 tables; the 70-table schema is recorded in `authoritative-schema.md` (including `cookie_policy` and `consents`) and the migration in `schema-migration-log.md` as amended 2026-11-06 (Part A renames; prompts P1–P14 carrying 43 `updated_at`, 28 `created_at`, 35 `metadata`, 2 `created_date` replacements); applied by David through Resolve.
+- After Step 15, Claude delivers the post-Step-15 corrections to the global and project documents and mirrors the 2026-11-06 amendment into `authoritative-schema.md`.
 - AC-6 (Anvil's written confirmation of the account structure) and AC-14 (SES production access) are outstanding; both before the first paying client.
