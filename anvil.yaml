@@ -1941,6 +1941,9 @@ dependencies:
 - dep_id: dep_lewosckouc52sm
   resolution_hints: {app_id: 7USO6DVZSIIWA5QX, name: m3-custom-theme, package_name: m3}
   version: {branch: master}
+- dep_id: dep_lhgtmc71xp5p
+  resolution_hints: {app_id: UGGJBAZUZ74XZ7VU, name: m3-custom-theme, package_name: m3}
+  version: {branch: master}
 name: mb-3-cs-app1
 native_deps:
   head_html: |+
