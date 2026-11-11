@@ -10,78 +10,78 @@ components:
         - layout_properties: {slot: card-content-container-slot}
           name: txt_category_badge
           properties: {}
-          type: form:dep_dapp798jbsn8mq:_Components.Text
+          type: form:dep_lhgtmc71xp5p:_Components.Text
         - layout_properties: {slot: card-content-container-slot}
           name: hdg_post_title
           properties: {}
-          type: form:dep_dapp798jbsn8mq:_Components.Heading
+          type: form:dep_lhgtmc71xp5p:_Components.Heading
         - layout_properties: {slot: card-content-container-slot}
           name: txt_meta
           properties: {}
-          type: form:dep_dapp798jbsn8mq:_Components.Text
+          type: form:dep_lhgtmc71xp5p:_Components.Text
         layout_properties: {slot: card-content-slot}
         name: card_content_container_1
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        type: form:dep_lhgtmc71xp5p:_Components.Card.CardContentContainer
       layout_properties: {grid_position: 'ASPDZA,HALPVS'}
       name: card_post_header
       properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.Card
+      type: form:dep_lhgtmc71xp5p:_Components.Card
     - components:
       - components:
         - layout_properties: {slot: card-content-container-slot}
           name: txt_post_content
           properties: {}
-          type: form:dep_dapp798jbsn8mq:_Components.Text
+          type: form:dep_lhgtmc71xp5p:_Components.Text
         layout_properties: {slot: card-content-slot}
         name: card_content_container_2
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        type: form:dep_lhgtmc71xp5p:_Components.Card.CardContentContainer
       layout_properties: {grid_position: 'FWLJPP,VGDSPH'}
       name: card_content
       properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.Card
+      type: form:dep_lhgtmc71xp5p:_Components.Card
     - components:
       - components:
         - layout_properties: {slot: card-content-container-slot}
           name: txt_pullquote
           properties: {}
-          type: form:dep_dapp798jbsn8mq:_Components.Text
+          type: form:dep_lhgtmc71xp5p:_Components.Text
         layout_properties: {slot: card-content-slot}
         name: card_content_container_3
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        type: form:dep_lhgtmc71xp5p:_Components.Card.CardContentContainer
       layout_properties: {grid_position: 'VQZKMS,PTVFIT'}
       name: card_pullquote
       properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.Card
+      type: form:dep_lhgtmc71xp5p:_Components.Card
     - components:
       - components:
         - layout_properties: {slot: card-content-container-slot}
           name: hdg_video
           properties: {text: Insert video custom component not yet made}
-          type: form:dep_dapp798jbsn8mq:_Components.Heading
+          type: form:dep_lhgtmc71xp5p:_Components.Heading
         layout_properties: {slot: card-content-slot}
         name: card_content_container_4
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+        type: form:dep_lhgtmc71xp5p:_Components.Card.CardContentContainer
       layout_properties: {grid_position: 'ZHGLMF,REAJIN'}
       name: card_video
       properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.Card
+      type: form:dep_lhgtmc71xp5p:_Components.Card
     - components:
       - layout_properties: {}
         name: btn_share_facebook
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Button
+        type: form:dep_lhgtmc71xp5p:_Components.Button
       - layout_properties: {}
         name: btn_share_twitter
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Button
+        type: form:dep_lhgtmc71xp5p:_Components.Button
       - layout_properties: {}
         name: btn_share_linkedin
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Button
+        type: form:dep_lhgtmc71xp5p:_Components.Button
       layout_properties: {grid_position: 'QBYHSD,LFVPGC'}
       name: flow_panel_1
       properties: {}

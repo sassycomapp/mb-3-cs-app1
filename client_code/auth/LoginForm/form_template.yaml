@@ -5,52 +5,52 @@ components:
       - layout_properties: {slot: card-content-container-slot}
         name: hdg_login_title
         properties: {align: center, text: Log in to your account}
-        type: form:dep_dapp798jbsn8mq:_Components.Heading
+        type: form:dep_lhgtmc71xp5p:_Components.Heading
       - layout_properties: {slot: card-content-container-slot}
         name: txt_login_subtitle
         properties:
           align: center
           text: |
             Enter your email and password to continue
-        type: form:dep_dapp798jbsn8mq:_Components.Text
+        type: form:dep_lhgtmc71xp5p:_Components.Text
       - layout_properties: {slot: card-content-container-slot}
         name: txt_login_error
         properties: {}
-        type: form:dep_dapp798jbsn8mq:_Components.Text
+        type: form:dep_lhgtmc71xp5p:_Components.Text
       - data_bindings:
         - {code: 'self.item['''']', property: text, writeback: true}
         layout_properties: {slot: card-content-container-slot}
         name: txt_email
         properties: {appearance: outlined, error: false, label: Email address, placeholder: Email address}
-        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        type: form:dep_lhgtmc71xp5p:_Components.TextInput.TextBox
       - data_bindings:
         - {code: 'self.item['''']', property: text, writeback: true}
         layout_properties: {slot: card-content-container-slot}
         name: txt_password
         properties: {appearance: outlined, hide_text: true, label: Password, placeholder: Password}
-        type: form:dep_dapp798jbsn8mq:_Components.TextInput.TextBox
+        type: form:dep_lhgtmc71xp5p:_Components.TextInput.TextBox
       - data_bindings:
         - {code: 'self.item['''']', property: checked, writeback: true}
         layout_properties: {slot: card-content-container-slot}
         name: cb_remember_me
         properties: {text: Remember me}
-        type: form:dep_dapp798jbsn8mq:_Components.Checkbox
+        type: form:dep_lhgtmc71xp5p:_Components.Checkbox
       - layout_properties: {slot: card-content-container-slot}
         name: btn_login
         properties: {text: Login}
-        type: form:dep_dapp798jbsn8mq:_Components.Button
+        type: form:dep_lhgtmc71xp5p:_Components.Button
       - layout_properties: {slot: card-content-container-slot}
         name: nav_forgot_password
         properties: {text: 'Forgot password?'}
-        type: form:dep_dapp798jbsn8mq:_Components.Link
+        type: form:dep_lhgtmc71xp5p:_Components.Link
       layout_properties: {slot: card-content-slot}
       name: card_content_container_1
       properties: {}
-      type: form:dep_dapp798jbsn8mq:_Components.Card.CardContentContainer
+      type: form:dep_lhgtmc71xp5p:_Components.Card.CardContentContainer
     layout_properties: {grid_position: 'LUOXCV,QLGPZN'}
     name: card_login
     properties: {appearance: outlined}
-    type: form:dep_dapp798jbsn8mq:_Components.Card
+    type: form:dep_lhgtmc71xp5p:_Components.Card
   layout_properties: {slot: default}
   name: content_panel
   properties: {}
