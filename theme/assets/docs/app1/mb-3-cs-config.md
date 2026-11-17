@@ -61,8 +61,8 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 |---|---|
 | Entry | 03 `new-app-with-context`, taken 2026-10-30 |
 | Run | `app1`, route Application |
-| Last step | 17 complete 2026-11-17 (receipt, checks and outputs in `mb-3-cs-project-library\pdlf-outputs\c17\`; the 71-table authoritative schema applied through one Resolve pass; migration log 2026-11-17 row) |
-| Next step | 18 (Phase C, pull to local) |
+| Last step | 18 complete 2026-11-17 (receipt, checks and outputs in `mb-3-cs-project-library\pdlf-outputs\c18\`; local master `81343a9` — Step 17's schema write plus David's own commit of the close-out config update; all five pull checks pass) |
+| Next step | 19 (Phase C) |
 | Gates | `domain-locked` passed 2026-11-12; next gate `concept-locked` at Step 21 (Phase C is built — no phase gap) |
 | Ledger | Database `pdlf`, port 5433, through the PowerShell bridge of PDLF's `spec-postgres-ledger` |
 
