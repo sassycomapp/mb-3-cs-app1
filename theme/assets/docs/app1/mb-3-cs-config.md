@@ -1,6 +1,6 @@
 # mb-3-cs — config
 
-State of the mb-3-cs project and its App 1 repository, as verified 2026-11-07.
+State of the mb-3-cs project and its App 1 repository, as verified 2026-11-17.
 
 ## Identity
 
@@ -61,13 +61,12 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 |---|---|
 | Entry | 03 `new-app-with-context`, taken 2026-10-30 |
 | Run | `app1`, route Application |
-| Last step | 15 complete 2026-11-07 (receipt, checks, gitleaks, threat model, access matrix, test plan, diagrams and copies in `mb-3-cs-project-library\pdlf-outputs\b15\`; the design doc amended in place with §23 Architecture, §24 Security Decisions, the review body and the report last) |
-| Next step | 16 (Phase B) |
-| Pause | After Step 16 gate `domain-locked`: Phases C to F are not built |
+| Last step | 17 complete 2026-11-17 (receipt, checks and outputs in `mb-3-cs-project-library\pdlf-outputs\c17\`; the 71-table authoritative schema applied through one Resolve pass; migration log 2026-11-17 row) |
+| Next step | 18 (Phase C, pull to local) |
+| Gates | `domain-locked` passed 2026-11-12; next gate `concept-locked` at Step 21 (Phase C is built — no phase gap) |
 | Ledger | Database `pdlf`, port 5433, through the PowerShell bridge of PDLF's `spec-postgres-ledger` |
 
 ## Open items
 
-- App 1 holds 44 tables; the 70-table schema is recorded in `authoritative-schema.md` (including `cookie_policy` and `consents`) and the migration in `schema-migration-log.md` as amended 2026-11-06 (Part A renames; prompts P1–P14 carrying 43 `updated_at`, 28 `created_at`, 35 `metadata`, 2 `created_date` replacements); applied by David through Resolve.
-- After Step 15, Claude delivers the post-Step-15 corrections to the global and project documents and mirrors the 2026-11-06 amendment into `authoritative-schema.md`.
+- The 71-table schema was applied 2026-11-17: `anvil.yaml` `db_schema` equals `authoritative-schema.md` (zero differences; ST-06/ST-07 pass; the live tables match). The migration log's 2026-11-17 row supersedes prompts P1–P14/P13a as the application method.
 - AC-6 (Anvil's written confirmation of the account structure) and AC-14 (SES production access) are outstanding; both before the first paying client.
