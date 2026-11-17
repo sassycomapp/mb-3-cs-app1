@@ -34,9 +34,9 @@ db_schema:
   availability_exceptions:
     client: none
     columns:
-    - admin_ui: {width: 200}
+    - admin_ui: {order: 0, width: 200}
       client_hidden: false
-      name: resource_id
+      name: provider_id
       target: users
       type: link_single
     - admin_ui: {width: 200}
@@ -65,9 +65,9 @@ db_schema:
   availability_rules:
     client: none
     columns:
-    - admin_ui: {width: 200}
+    - admin_ui: {order: 0, width: 200}
       client_hidden: false
-      name: resource_id
+      name: provider_id
       target: users
       type: link_single
     - admin_ui: {width: 200}
@@ -137,9 +137,9 @@ db_schema:
       client_hidden: false
       name: commenter_email
       type: string
-    - admin_ui: {width: 200}
+    - admin_ui: {order: 4, width: 200}
       client_hidden: false
-      name: comment
+      name: comment_text
       type: string
     - admin_ui: {width: 200}
       client_hidden: false
@@ -288,9 +288,9 @@ db_schema:
       name: service_id
       target: services
       type: link_single
-    - admin_ui: {width: 200}
+    - admin_ui: {order: 3, width: 200}
       client_hidden: false
-      name: resource_id
+      name: provider_id
       target: users
       type: link_single
     - admin_ui: {width: 200}
@@ -971,7 +971,7 @@ db_schema:
     columns:
     - admin_ui: {order: 0, width: 200}
       client_hidden: false
-      name: tomestamp
+      name: timestamp
       type: datetime
     - admin_ui: {order: 1, width: 200}
       client_hidden: false
@@ -1352,10 +1352,6 @@ db_schema:
     columns:
     - admin_ui: {width: 200}
       client_hidden: false
-      name: active_gateway
-      type: string
-    - admin_ui: {width: 200}
-      client_hidden: false
       name: stripe_publishable_key
       type: string
     - admin_ui: {width: 200}
@@ -1365,14 +1361,6 @@ db_schema:
     - admin_ui: {width: 200}
       client_hidden: false
       name: stripe_connected_at
-      type: datetime
-    - admin_ui: {width: 200}
-      client_hidden: false
-      name: paystack_connected
-      type: bool
-    - admin_ui: {width: 200}
-      client_hidden: false
-      name: paystack_connected_at
       type: datetime
     - admin_ui: {width: 200}
       client_hidden: false
@@ -1749,9 +1737,9 @@ db_schema:
       name: contact_id
       target: contacts
       type: link_single
-    - admin_ui: {width: 200}
+    - admin_ui: {order: 2, width: 200}
       client_hidden: false
-      name: staff_id
+      name: provider_id
       target: users
       type: link_single
     - admin_ui: {width: 200}
