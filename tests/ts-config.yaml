@@ -57,8 +57,8 @@ allow_embedding: false
 allow_signup: null      # true or false, as the access matrix decides
 
 # GitHub sources for the local runtime's dependency checkouts (ts_local.sh
-# clones each dependency at the tag declared in anvil.yaml, into a directory
+# clones each dependency at the tag or branch declared in anvil.yaml, into a directory
 # adjacent to the package-named app link, and maps it with --dep-id).
 dependency_sources:
-  "4UK6WHQ6UX7AKELK": "https://github.com/anvil-works/material-3-theme.git"
+  "UGGJBAZUZ74XZ7VU": "https://github.com/sassycomapp/m3-custom-theme.git"
   "3PIDO5P3H4VPEMPL": "https://github.com/anvil-works/routing.git"
