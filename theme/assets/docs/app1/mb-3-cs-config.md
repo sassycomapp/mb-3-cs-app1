@@ -1,6 +1,6 @@
 # mb-3-cs — config
 
-State of the mb-3-cs project and its App 1 repository, as verified 2026-11-17.
+State of the mb-3-cs project and its App 1 repository, as verified 2026-11-25.
 
 ## Identity
 
@@ -61,9 +61,9 @@ App 4 (client instances) lives on each client's own Anvil account; it has no fol
 |---|---|
 | Entry | 03 `new-app-with-context`, taken 2026-10-30 |
 | Run | `app1`, route Application |
-| Last step | 19 complete 2026-11-17 (receipt, checks and outputs in `mb-3-cs-project-library\pdlf-outputs\c19\`; 52 tickets in `pdlf-tickets\app1\`; 28 flow diagrams; Sentinel CLEAR at Medium; BFT Full) |
-| Next step | 20 (Phase C) |
-| Gates | `domain-locked` passed 2026-11-12; next gate `concept-locked` at Step 21 (Phase C is built — no phase gap) |
+| Last step | 22 complete 2026-11-18 (143 screen requirements in the project library's `ui\`; requirement index, checks and cross-check in `pdlf-outputs\c22\`; receipt written 2026-11-25 on resume; DC-16/DC-05 143/143; BFT Full) |
+| Next step | 23 (Phase C, design review) |
+| Gates | `domain-locked` passed 2026-11-12; `concept-locked` passed 2026-11-18; next gate `screens-approved` at Step 26 (end of Phase C) |
 | Ledger | Database `pdlf`, port 5433, through the PowerShell bridge of PDLF's `spec-postgres-ledger` |
 
 ## Open items
